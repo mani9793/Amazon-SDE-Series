@@ -1,0 +1,7 @@
+def convertFive(n):
+ return int(str(n).replace('0','5'))
+
+if __name__=='__main__':
+    t = int(input())
+    for i in range(t):
+        print (convertFive(int(input().strip())))
