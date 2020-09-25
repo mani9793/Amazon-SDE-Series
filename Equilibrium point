@@ -1,0 +1,57 @@
+#include <iostream>
+using namespace std;
+
+// Position this line where user code will be pasted.
+
+int equilibriumPoint(long long a[], int n);
+
+int main() {
+
+    long long t;
+    cin >> t;
+
+    while (t--) {
+        long long n;
+        cin >> n;
+        long long a[n];
+
+        for (long long i = 0; i < n; i++) {
+            cin >> a[i];
+        }
+
+        cout << equilibriumPoint(a, n) << endl;
+    }
+    return 0;
+}
+// } Driver Code Ends
+
+
+// Function to find equilibrium point
+// a: input array
+// n: size of array
+int equilibriumPoint(long long a[], int n) {
+
+    // Your code here
+   long long  right_sum = 0, left_sum = 0,i,j; 
+  
+    // Computing right_sum 
+    if(n==1)
+       return 1;
+    for ( i = 1; i < n; i++) 
+        right_sum += a[i]; 
+  
+    // Checking the point of partition 
+    // i.e. left_Sum == right_sum 
+    for ( i = 0, j = 1; j < n; i++, j++) { 
+        right_sum -= a[j]; 
+        left_sum += a[i]; 
+  
+        if (left_sum == right_sum) 
+            return i + 2; 
+    } 
+  left_sum=0;
+    right_sum=0;
+    return -1;
+    
+    
+}
