@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Position this line where user code will be pasted.
-
 int equilibriumPoint(long long a[], int n);
 
 int main() {
