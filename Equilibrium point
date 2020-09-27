@@ -38,7 +38,6 @@ int equilibriumPoint(long long a[], int n) {
         right_sum += a[i]; 
   
     // Checking the point of partition 
-    // i.e. left_Sum == right_sum 
     for ( i = 0, j = 1; j < n; i++, j++) { 
         right_sum -= a[j]; 
         left_sum += a[i]; 
