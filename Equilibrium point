@@ -30,8 +30,7 @@ int equilibriumPoint(long long a[], int n) {
 
     // Your code here
    long long  right_sum = 0, left_sum = 0,i,j; 
-  
-    // Computing right_sum 
+ 
     if(n==1)
        return 1;
     for ( i = 1; i < n; i++) 
