@@ -45,6 +45,4 @@ int equilibriumPoint(long long a[], int n) {
   left_sum=0;
     right_sum=0;
     return -1;
-    
-    
 }
