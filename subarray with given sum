@@ -36,7 +36,7 @@ void subarraySum(int arr[], int n, int s){
     
 }
 
-// { Driver Code Starts.
+
 
 int main()
  {
@@ -57,4 +57,4 @@ int main()
         
     }
 	return 0;
-}  // } Driver Code Ends
+} 
