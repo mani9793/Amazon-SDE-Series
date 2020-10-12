@@ -1,0 +1,60 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+
+
+// Function to find the subarray with given sum k
+// arr: input array
+// n: size of array
+void subarraySum(int arr[], int n, int s){
+    
+    // Your code here
+    int curr=arr[0],start=0,i,flag=1;
+    for(i=1;i<=n;i++)
+    {
+            while(curr>s && start < i-1)
+            {
+                curr-=arr[start];
+                start++;
+            }
+        
+            
+          if (curr == s) {
+                flag=0;
+                cout << start+1 <<" "<< i;
+                break;
+          }
+         if (i < n)
+            curr= curr + arr[i];
+    }
+    
+    if(flag==1)
+       cout<<-1;
+  
+    
+}
+
+// { Driver Code Starts.
+
+int main()
+ {
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        long long s;
+        cin>>n>>s;
+        int arr[n];
+        
+        for(int i=0;i<n;i++)
+            cin>>arr[i];
+        
+        subarraySum(arr, n, s);
+        cout<<endl;
+        
+    }
+	return 0;
+}  // } Driver Code Ends
