@@ -1,10 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
- // } Driver Code Ends
-
-
 // Function to find the subarray with given sum k
 // arr: input array
 // n: size of array
