@@ -32,8 +32,6 @@ void subarraySum(int arr[], int n, int s){
     
 }
 
-
-
 int main()
  {
     int t;
