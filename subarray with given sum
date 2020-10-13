@@ -15,8 +15,7 @@ void subarraySum(int arr[], int n, int s){
                 curr-=arr[start];
                 start++;
             }
-        
-            
+       
           if (curr == s) {
                 flag=0;
                 cout << start+1 <<" "<< i;
