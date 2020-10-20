@@ -3,7 +3,7 @@ using namespace std;
 
 long long int floorSqrt(long long int x);
 
- // } Driver Code Ends
+ // Driver Code Ends
 // Function to find square root
 // x: element to find square root
 long long int floorSqrt(long long int x) 
