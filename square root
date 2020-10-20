@@ -12,7 +12,7 @@ long long int floorSqrt(long long int x)
     return sqrt(x);
 }
 
-// { Driver Code Starts.
+// Driver Code Starts.
 
 int main()
 {
