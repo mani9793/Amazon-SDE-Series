@@ -27,7 +27,6 @@ vector<int> largestAndSecondLargest(int sizeOfArray, int arr[]){
      
         
     return v;
-     
 }
 
 int main() {
