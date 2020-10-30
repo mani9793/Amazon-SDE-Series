@@ -31,6 +31,7 @@ vector<int> duplicates(int a[], int n) {
         if ((a[i]/n) > 1){
           v.push_back(i);
     }
+    
     }
     if (v.empty()) { 
         cout << -1; 
