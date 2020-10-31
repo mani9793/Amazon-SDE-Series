@@ -27,7 +27,6 @@ int majorityElement(int a[], int size)
         return -1 ; 
     
     
-    
 }
 
 // { Driver Code Starts.
