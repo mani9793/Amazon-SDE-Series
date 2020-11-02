@@ -24,8 +24,6 @@ class GFG{
     } 
 }
 
-
-
 class Solution 
 { 
 	static int[] SortBinaryArray(int arr[], int n) 
