@@ -20,7 +20,8 @@ int main() {
         cout << MissingNumber(array, n) << "\n";
     }
     return 0;
-}// } Driver Code Ends
+}
+// } Driver Code Ends
 
 
 // User function template for C++
