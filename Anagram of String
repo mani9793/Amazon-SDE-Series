@@ -5,7 +5,6 @@ const int CHARS = 26;
 // function to calculate minimum numbers of characters
 // to be removed to make two strings anagram
 int remAnagram(string str1, string str2);
-
 // Driver program to run the case
 int main()
 {
