@@ -1,0 +1,70 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+ // } Driver Code Ends
+
+
+/*  Function to check if str1 can be formed from
+*   str2 after rotation by 2 places
+
+string L_rotated(string s){
+    reverse(s.begin(), s.begin()+2); 
+    reverse(s.begin()+2, s.end()); 
+    reverse(s.begin(), s.end()); 
+}
+string R_rotated(string s){
+   reverse(s.begin(), s.end()-2); 
+    reverse(s.end()-2, s.end()); 
+    reverse(s.begin(), s.end()); 
+}
+
+*/
+bool isRotated(string s1, string s2)
+{
+    // Your code here
+ /*   if(L_rotated(str2)==str1)
+        return true;
+    else if(R_rotated(str2)==str1)
+        return true;
+    else
+        return false;
+        
+        */
+        if(s2.length()==1){
+            if(s1==s2)
+                return true;
+            else
+                return false;
+        }
+            
+          string left = s2,right=s2;
+        rotate(left.begin(),left.begin()+2,left.end());
+        rotate(right.begin(),right.end()-2,right.end());
+
+        if(left==s1 || right==s1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    
+}
+
+
+// { Driver Code Starts.
+
+int main() {
+	
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		string s;
+		string b;
+		cin>>s>>b;
+		cout<<isRotated(s,b)<<endl;
+	}
+	return 0;
+}
+  // } Driver Code Ends
