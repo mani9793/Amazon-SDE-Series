@@ -20,14 +20,6 @@ string R_rotated(string s){
 bool isRotated(string s1, string s2)
 {
     // Your code here
- /*   if(L_rotated(str2)==str1)
-        return true;
-    else if(R_rotated(str2)==str1)
-        return true;
-    else
-        return false;
-        
-        */
         if(s2.length()==1){
             if(s1==s2)
                 return true;
