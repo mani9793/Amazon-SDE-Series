@@ -3,8 +3,6 @@ using namespace std;
 
 
  // } Driver Code Ends
-
-
 /*  Function to check if str1 can be formed from
 *   str2 after rotation by 2 places
 
