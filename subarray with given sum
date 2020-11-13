@@ -24,7 +24,6 @@ void subarraySum(int arr[], int n, int s){
          if (i < n)
             curr= curr + arr[i];
     }
-    
     if(flag==1)
        cout<<-1;  
 }
