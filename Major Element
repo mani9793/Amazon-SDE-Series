@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
  // } Driver Code Ends
-
 // Function to find majority element in the array
 // a: input array
 // size: size of input array
