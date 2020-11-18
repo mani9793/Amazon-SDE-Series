@@ -24,6 +24,7 @@ int main() {
 // Function to find equilibrium point
 // a: input array
 // n: size of array
+
 int equilibriumPoint(long long a[], int n) {
 
     // Your code here
