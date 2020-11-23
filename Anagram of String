@@ -19,7 +19,6 @@ int main()
     }
     return 0;
 }
-
 // } Driver Code Ends
 // function to calculate minimum numbers of characters
 // to be removed to make two strings anagram
